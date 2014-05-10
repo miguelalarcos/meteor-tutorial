@@ -1,0 +1,9 @@
+<template name="item_form">
+  {{> quickForm collection="items" doc=myDoc id="item_form" type=typeForm}}
+  all items:
+  <ul>
+  {{#each items}}
+  <li>{{name}}, {{description}}, <a class=editable _id={{_id}} href="">edit</a></li>
+  {{/each}}
+  </ul>
+</template>

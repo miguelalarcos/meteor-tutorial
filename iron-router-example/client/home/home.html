@@ -1,0 +1,22 @@
+<template name='home'>
+    {{> loginButtons}}
+    {{#if currentUser}}        
+        {{> home_page}}
+    {{else}}
+        {{> login_page}}
+    {{/if}}
+    <ul>
+        <li><a href="{{pathFor 'page' _id='a'}}">page a</a></li>
+        <li><a href="{{pathFor 'page' _id='v'}}">page v</a></li>
+    </ul>
+</template>
+
+
+<template name='home_page'>
+<h1>Home!!!</h1>
+Sigue este enlace si quieres editar elementos: <a href="{{pathFor 'item_form'}}">edición</a>
+</template>
+
+<template name='login_page'>
+<h1>Por favor introduzca su usuario y contraseña.</h1>
+</template>

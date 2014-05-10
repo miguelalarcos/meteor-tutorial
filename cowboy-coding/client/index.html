@@ -1,0 +1,16 @@
+<body>
+<h1>Esta es una aplicación de Meteor.</h1>
+{{>hello}} <!-- la inclusión de un template -->
+</body>
+
+<!-- un template es una pieza de html con algunas peculiaridades-->
+<template name='hello'>
+En este template vamos a listar los items.
+<ul>
+{{#each items}} <!-- dada la fuente de datos items definida en el modelo, itereamos sobre ella-->
+    <li>
+    {{name}}, {{description}} <!-- pintamos el nombre y la descripción del objeto en curso de la iteración -->
+    </li>
+{{/each}}
+</ul>
+</template>
