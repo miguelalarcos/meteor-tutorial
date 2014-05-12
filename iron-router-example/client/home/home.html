@@ -13,7 +13,9 @@
 
 
 <template name='home_page'>
-<h1>Home!!!</h1>
+<h1>Home!!!, {{total_manzanas}}: {{ i18n 'THERE_ARE_APPLES' count=total_manzanas }}</h1>
+Di cuantas manzanas hay: <input type=text class=manzana value="0"/>
+<br />
 Sigue este enlace si quieres editar elementos: <a href="{{pathFor 'item_form'}}">edición</a>
 </template>
 
