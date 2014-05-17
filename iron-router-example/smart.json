@@ -2,6 +2,6 @@
   "packages": {
     "iron-router": {},
     "autoform": {},
-    "sym-i18n": {"git" : "https://github.com/miguelalarcos/sym-i18n.git"}
+    "sym-i18n": {}
   }
 }

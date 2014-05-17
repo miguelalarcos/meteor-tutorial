@@ -1,5 +1,6 @@
 HomeController = @HomeController
 PageController = @PageController
+ItemFormController = @ItemFormController
 
 Router.map ->
     @route 'home',
