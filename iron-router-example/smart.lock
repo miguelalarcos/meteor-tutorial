@@ -3,7 +3,11 @@
   "dependencies": {
     "basePackages": {
       "iron-router": {},
-      "autoform": {}
+      "autoform": {},
+      "sym-i18n": {
+        "git": "https://github.com/miguelalarcos/sym-i18n.git",
+        "branch": "master"
+      }
     },
     "packages": {
       "iron-router": {
@@ -15,6 +19,11 @@
         "git": "https://github.com/aldeed/meteor-autoform.git",
         "tag": "v0.8.1",
         "commit": "385051a5e4bbea3b2a54965800f5f530987ef432"
+      },
+      "sym-i18n": {
+        "git": "https://github.com/miguelalarcos/sym-i18n.git",
+        "branch": "master",
+        "commit": "39f6bc1b6f57d0403e5aaebb92325420126be8ee"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
